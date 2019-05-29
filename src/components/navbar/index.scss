@@ -1,0 +1,35 @@
+@import '../../assets/sass/helpers';
+
+header {
+  background-color: $royal-purp;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+  a {
+    color: $snow;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  a:hover {
+     font-weight: bold;
+  }
+
+  a:visited {
+    color: $snow;
+  }
+  
+  
+  .brand {
+    align-self: center;
+    padding: 10px; 
+  }
+
+
+  nav {
+    align-self: center;
+    padding: 10px;
+  }
+}
