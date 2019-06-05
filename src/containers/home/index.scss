@@ -1,0 +1,28 @@
+@import '../../assets/sass/helpers';
+
+.homepg {
+  background-color: $charcoal;
+  color: $snow;
+  font-family: $playfair;
+  height: calc(100vh - 60px);
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+  padding: 10px;
+
+  p {
+    text-align: left;
+   }
+
+
+  @include bp-tablet-landscape {
+    padding: 40px;
+  }
+
+  @include bp-desktop {
+    max-width: 786px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 20px;
+  }
+}

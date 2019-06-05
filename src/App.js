@@ -1,16 +1,13 @@
 import React from 'react';
-import { Link, BrowserRouter as Router,  } from 'react-router-dom';
-import Footer from './components/footer';
-import Navbar from './components/navbar';
-import Home from './components/home';
-// import ContactMe from './components/contact';
+import { BrowserRouter as Router, Route, } from 'react-router-dom';
+import Home from './containers/home';
+import ContactMe from './containers/contact';
+import './index.scss';
 
 const App = () => (
   <Router>
-    <Navbar />
-    <Home/>
-    {/* <ContactMe/> */}
-    <Footer />
+    <Home />
+    <Route exact path="/Contact" compoent={ContactMe} />
   </Router>
 )
 

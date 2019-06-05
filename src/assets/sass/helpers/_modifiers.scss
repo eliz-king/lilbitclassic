@@ -10,6 +10,8 @@
 // Float
 .left  { float: left  !important; }
 .right { float: right !important; }
+.clearfix-right { clear: right !important; }
+.clearfix { clear: both !important;}
 
 // Text Align
 .text-left   { text-align: left   !important; }

@@ -1,0 +1,31 @@
+@import '../../assets/sass/helpers';
+
+    .about {
+      border: 50px;
+
+      h1 {
+        margin-top: 0;
+      }
+
+      p {
+        margin-top: 0px;  
+        padding: 40px;
+        margin: 20px;
+        text-align: center;
+
+     } 
+    }
+
+  
+    .aboutPic  {
+      float: left;
+      padding-top: 20px;
+      margin-right: 50px;
+
+      img {
+        width: 200px;
+        height: 250px;
+        border-radius: 100%;
+        padding: 10px;
+      }
+    }  

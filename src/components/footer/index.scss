@@ -1,11 +1,38 @@
 @import '../../assets/sass/helpers';
 
 footer {
-  background-color: $royal-purp;
-  position: bottom;
   height: 120px;
-  width: 100%;
-  margin-top: -40px;
+  text-align: center;
+  color: $royal-purp;
+  position: relative;
+  display: inline-block;
+  
 
-  color: $snow;
+  a {
+    padding: 5px;
+    text-decoration: none;
+    color: $royal-purp;
+
+    @include bp-tablet-landscape {
+      padding: 10px;
+    }
+  }
+
+  .icons {
+    padding-top: 10px;
+
+    @include bp-tablet-landscape {
+      font-size: 50px;
+    }
+  }
+
+  .copyright {
+    text: 10px;
+    width: 100%;
+    align: center;
+    
+    @include bp-tablet-portrait {
+      text: 20px;
+    }
+  }
 }

@@ -6,7 +6,8 @@ const Navbar = () => (
   <header>
     <Link to='/' className='left brand'>EK</Link>
     <nav className='right'>
-      <Link to='/contact'>Contact</Link>
+      <Link to='/contact'>Message Me!</Link>
+      
     </nav>
   </header>
 )
