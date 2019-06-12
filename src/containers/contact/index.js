@@ -1,34 +1,27 @@
 import React from 'react';
 import './index.scss';
+import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
+import Nodemailer from 'nodemailer';
 
-const ContactMe = () => {
-  render(
-    return(
-      <div className=''>
-        <head>
-          <title>Contact Me:</title>
-        </head>
-        <body>
-          <div class="container">
-            <form action="action_page.php">
-
-              <label for="name">Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
-
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="Email.."></input>
-
-
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              <input type="submit" value="Submit"></input>
-
-             </form>
-            </div> 
-         </body>
-       </div>
-    )
-  )
-}
+const ContactMe = () => (
+  <div>
+    <Navbar />
+    <div className="contactForm">
+      <form action='/contact' method='post'>
+      <div className='name'> 
+        <input type='text' id='name' name='name' placeholder='Name' />
+      </div>
+      <div className='email'>
+        <input type='email' id='email' name='email' placeholder='Email' />
+      </div>
+      <div className='msg'>
+        <textarea id='msg' name='message' placeholder='Your Message:'></textarea>
+      </div>
+      </form>
+    </div>
+    <Footer />
+  </div>
+)
 
 export default ContactMe;

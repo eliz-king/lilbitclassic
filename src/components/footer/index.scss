@@ -2,7 +2,7 @@
 
 footer {
   height: 120px;
-  text-align: center;
+  align: center;
   color: $royal-purp;
   position: relative;
   display: inline-block;
@@ -28,8 +28,9 @@ footer {
 
   .copyright {
     text: 10px;
-    width: 100%;
-    align: center;
+    padding-left: 40px;
+    padding-bottom: 5px;
+
     
     @include bp-tablet-portrait {
       text: 20px;

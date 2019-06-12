@@ -1,2 +1,32 @@
 @import '../../assets/sass/helpers';
 
+.contactForm {
+  background-color: $charcoal;
+  color: $royal-purp;
+  font-family: $playfair;
+  height: calc(100vh - 60px);
+  align: center;
+  margin-top: 60px;
+  width: 100%;
+  padding: 20px;
+  
+  ::placeholder {
+    color: $royal-purp;
+    font-family: $playfair;
+  }
+
+  .name {
+    // width: 400px;
+    // height: 40px;
+  }
+  
+  .email {
+    // width: 400px;
+    // height: 40px;
+  }
+
+  .msg {
+    // width: 400px;
+    // height: 200px;
+  }
+}
