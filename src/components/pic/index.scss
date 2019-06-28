@@ -1,0 +1,15 @@
+@import '../../assets/sass/helpers';
+
+.pic {
+  height: 240px;
+
+  img {
+    height: 100%;
+    padding: 10px;
+    border-radius: 100%;
+  }
+}
+
+  @include bp-desktop {
+    
+  } 

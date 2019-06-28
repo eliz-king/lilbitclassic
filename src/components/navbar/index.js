@@ -3,12 +3,10 @@ import { Link, } from 'react-router-dom';
 import './index.scss';
 
 const Navbar = () => (
-  <header>
+  <nav>
     <Link to='/' className='left brand'>EK</Link>
-    <nav className='right'>
-      <Link to='/contact'>Message Me!</Link>    
-    </nav>
-  </header>
+    <Link to='/contact' className="right">Message Me!</Link>    
+  </nav>
 )
 
 export default Navbar; 

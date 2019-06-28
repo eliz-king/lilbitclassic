@@ -2,38 +2,34 @@
 
 footer {
   height: 120px;
-  align: center;
+  text-align: center;
   color: $royal-purp;
-  position: relative;
-  display: inline-block;
-  
+  grid-row: 12/13;
+  grid-column: 1/2;
 
   a {
     padding: 5px;
     text-decoration: none;
     color: $royal-purp;
-
-    @include bp-tablet-landscape {
-      padding: 10px;
-    }
   }
 
   .icons {
     padding-top: 10px;
-
-    @include bp-tablet-landscape {
-      font-size: 50px;
-    }
+    font-size: 35px;
   }
 
   .copyright {
-    text: 10px;
-    padding-left: 40px;
+    text-align: center;
     padding-bottom: 5px;
+    font-family: $playfair;
+  }
 
-    
-    @include bp-tablet-portrait {
-      text: 20px;
+  @include bp-desktop {
+    font-size: 15px;
+
+    .icons {
+      font-size: 50px;
     }
   }
 }
+

@@ -1,7 +1,6 @@
 @import '../../assets/sass/helpers';
 
-header {
-  // background-color: $royal-purp;
+nav {
   height: 60px;
   width: 100%;
   display: flex;
@@ -10,6 +9,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: $charcoal;
 
   
   a {
@@ -32,9 +32,7 @@ header {
     padding: 20px; 
   }
 
-
-  nav {
-    align-self: center;
-    padding: 10px;
+  @include bp-desktop {
+    font-size: 20px;
   }
 }

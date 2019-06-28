@@ -1,9 +1,13 @@
 @import '../../assets/sass/helpers';
 
 .profile {
-  width: 45%;
-  
+  padding-bottom: 20px;
+
   p {
-   text-align: left;
+   text-align: center;
+  }
+
+  @include bp-desktop {
+    
   }
 }

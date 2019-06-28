@@ -1,0 +1,13 @@
+@import '../../assets/sass/helpers';
+
+
+.headline {
+  padding: 10px;
+  // max-width: 100vw;
+  // overflow: auto;
+
+  h1 {
+    display: inline;
+    color: $royal-purp;
+  }
+}

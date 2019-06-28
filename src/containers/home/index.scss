@@ -4,25 +4,68 @@
   background-color: $charcoal;
   color: $snow;
   font-family: $playfair;
-  height: calc(100vh - 60px);
+  padding-top: 80px;
   text-align: center;
-  margin-top: 60px;
-  width: 100%;
-  padding: 10px;
-
-  p {
-    text-align: left;
-   }
-
-
-  @include bp-tablet-landscape {
-    padding: 40px;
-  }
+  max-width: 100vw;
+  max-height: 100vh;
+  font-size: 15px;
+  display: grid;
+  grid-template: repeat(12, 1fr) / 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
 
   @include bp-desktop {
-    max-width: 786px;
-    margin: auto;
-    margin-top: 60px;
-    padding: 20px;
+    // max-width: 786px;
+    // margin-top: 60px;
+    // padding: 20px;
+    font-size: 20px;
+    grid-template: repeat(12, 1fr) / repeat(4, 1fr);
+  }
+
+  .pic {
+    width: 100%;
+    height: 100%;
+    grid-row: 1/4;
+    grid-column: 1/2;
+
+    @include bp-desktop {
+      grid-row: 2/5;
+      grid-column: 2/3;
+    }
+  }
+
+  .headline {
+    grid-row: 4/6;
+    grid-column: 1/2;
+
+    @include bp-desktop {
+      grid-row: 2/5;
+      grid-column: 3/4;
+    }
+   }
+
+   .profile {
+    grid-row: 6/9;
+    grid-column: 1/2;
+
+    @include bp-desktop {
+      grid-row: 5/8;
+      grid-column: 2/3;
+    }
+  }
+
+   .skills {
+     grid-row: 9/12;
+     grid-column: 1/2;
+
+     @include bp-desktop {
+       grid-row: 5/8;
+       grid-column: 3/4;
+     }
+   }
+   .resume {
+    grid-row: 12/13;
+    grid-column: 1/2;
   }
 }

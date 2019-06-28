@@ -9,15 +9,10 @@ const ContactMe = () => (
     <Navbar />
     <div className="contactForm">
       <form action='/contact' method='post'>
-      <div className='name'> 
         <input type='text' id='name' name='name' placeholder='Name' />
-      </div>
-      <div className='email'>
         <input type='email' id='email' name='email' placeholder='Email' />
-      </div>
-      <div className='msg'>
-        <textarea id='msg' name='message' placeholder='Your Message:'></textarea>
-      </div>
+        <textarea id="subject" name="subject" placeholder="Your message..." />
+        <button type='submit'>Send</button>
       </form>
     </div>
     <Footer />

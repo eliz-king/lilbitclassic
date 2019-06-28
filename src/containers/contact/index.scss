@@ -4,29 +4,63 @@
   background-color: $charcoal;
   color: $royal-purp;
   font-family: $playfair;
-  height: calc(100vh - 60px);
-  align: center;
   margin-top: 60px;
-  width: 100%;
-  padding: 20px;
+  padding-top: 80px;
+  margin: auto;
+  min-height: calc(100vh - 180px);
   
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+
+    input {
+      width: 95%;
+      height: 30px;
+      display: block;
+      padding: 10px;
+      margin: 15px 0;
+      border-radius: 20px;
+    }
+
+    textarea {
+      width: 95%;
+      height: 80px;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    button {
+      background-color: $royal-purp;
+      border: black;
+      border-radius: 0;
+      font-family: $playfair;
+      height: 30px;
+      width: 60px;
+      margin: 20px;
+    }
+  }
   ::placeholder {
     color: $royal-purp;
     font-family: $playfair;
   }
 
-  .name {
-    // width: 400px;
-    // height: 40px;
+  footer {
+    
   }
-  
-  .email {
-    // width: 400px;
-    // height: 40px;
+ 
+
+  @include bp-tablet-portrait {
+    padding: 40px;
   }
 
-  .msg {
-    // width: 400px;
-    // height: 200px;
+  @include bp-desktop {
+    max-width: 786px;
+    margin: auto;
+    margin-top: 60px;
   }
 }
