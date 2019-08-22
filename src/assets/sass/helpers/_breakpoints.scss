@@ -1,0 +1,38 @@
+// 0-599px
+@mixin bp-phone-only {
+  @media only screen and (max-width: 599px) { @content; }
+}
+
+// 600-899px
+@mixin bp-tablet-portrait {
+  @media only screen and (min-width: 600px) { @content; }
+}
+
+// 900-1199px
+@mixin bp-tablet-landscape {
+  @media only screen and (min-width: 900px) { @content; }
+}
+
+// 1200-1799px
+@mixin bp-desktop {
+  @media only screen and (min-width: 1200px) { @content; }
+}
+
+// +1800px
+@mixin bp-big-desktop {
+  @media only screen and (min-width: 1800px) { @content; }
+}
+
+// min-width(size)
+@mixin bp-min-size($media) {
+  @media only screen and (min-width: $media) {
+    @content;
+  }
+}
+
+// max-width(size)
+@mixin bp-max-size($media) {
+  @media only screen and (max-width: $media) {
+    @content;
+  }
+}

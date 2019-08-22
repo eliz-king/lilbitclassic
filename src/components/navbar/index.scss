@@ -1,0 +1,38 @@
+@import '../../assets/sass/helpers';
+
+nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: $playfair;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $charcoal;
+
+  
+  a {
+    color: $royal-purp;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  a:hover {
+     font-weight: bold;
+  }
+
+  a:visited {
+    color: $royal-purp;
+  }
+  
+  
+  .brand {
+    align-self: center;
+    padding: 20px; 
+  }
+
+  @include bp-desktop {
+    font-size: 20px;
+  }
+}

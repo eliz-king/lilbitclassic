@@ -1,0 +1,37 @@
+$all: all 0.3s ease-in-out;
+
+// Transition Mixin
+@mixin transition($arguments...) {
+  -webkit-transition: $arguments;
+  -moz-transition: $arguments;
+  -ms-transition: $arguments;
+  -o-transition: $arguments;
+  transition: $arguments;
+}
+
+// Transform Mixin
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+// Animation Mixin
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  -ms-animation: $animation;
+  -o-animation: $animation;
+  animation: $animation;
+}
+
+// Keyframes Mixin
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} { @content; }
+  @-moz-keyframes #{$animation-name} { @content; }
+  @-ms-keyframes #{$animation-name} { @content; }
+  @-o-keyframes #{$animation-name} { @content; }
+  @keyframes #{$animation-name} { @content; }
+}

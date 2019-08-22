@@ -1,0 +1,67 @@
+@import '../../assets/sass/helpers';
+
+.skills {
+  width: 100%;
+  
+  .icons2 {
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat (3, 1fr);
+    margin: 30px;
+
+
+    i {
+    font-size: 35px;  
+    padding: 5px;
+    text-decoration: none;
+    color: $royal-purp;
+
+    &.react {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+
+    &.js {
+      grid-row: 3/4;
+      grid-column: 1/2;
+    }
+
+    &.html5 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+
+    &.ruby {
+      grid-row: 1/2;
+      grid-column: 3/4;
+    }
+  }
+
+  p {
+    &.sql {
+      grid-row: 3/4;
+      grid-column: 3/4;
+    }
+  }
+
+    @include bp-desktop {
+      padding: 10px;
+      font-size: 45px;
+
+      i {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+
+  p {
+    position: relative;
+    color: $royal-purp;
+
+  }
+
+}
