@@ -55,6 +55,18 @@
   @include bp-desktop {
     float: right;
     position: relative;
+
+    .icons2 {
+      i {
+        font-size: 50px;
+      }
+
+      p {
+        &.sql {
+          font-size: 30px;
+        }
+      }
+    }
   }
 
 }
