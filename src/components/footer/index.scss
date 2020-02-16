@@ -1,7 +1,7 @@
 @import '../../assets/sass/helpers';
 
 footer {
-  height: 120px;
+  height: 110px;
   text-align: center;
   color: $royal-purp;
   grid-row: 12/13;
@@ -24,12 +24,19 @@ footer {
     font-family: $playfair;
   }
 
-  @include bp-desktop {
+  c {
     font-size: 15px;
 
     .icons {
       font-size: 50px;
     }
+  }
+
+  @include bp-desktop {
+    footer {
+      position: absolute; 
+    }
+
   }
 }
 

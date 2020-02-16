@@ -2,11 +2,13 @@
 
 .skills {
   width: 100%;
+  display: center;
+
   
   .icons2 {
 
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat (3, 1fr);
+    grid-template: repeat (3, 1fr) / repeat (3, 1fr);
     margin: 30px;
 
 
@@ -35,6 +37,7 @@
       grid-row: 1/2;
       grid-column: 3/4;
     }
+    }
   }
 
   p {
@@ -44,24 +47,14 @@
     }
   }
 
-    @include bp-desktop {
-      padding: 10px;
-      font-size: 45px;
-
-      i {
-        font-size: 50px;
-      }
-
-      p {
-        font-size: 30px;
-      }
-    }
-  }
-
   p {
     position: relative;
     color: $royal-purp;
+  }
 
+  @include bp-desktop {
+    float: right;
+    position: relative;
   }
 
 }

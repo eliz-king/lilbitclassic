@@ -1,13 +1,25 @@
 @import '../../assets/sass/helpers';
 
 .profile {
+  color: $royal-purp;
   padding-bottom: 20px;
+  text-align: center;
+  display: inline;
+
+  h2 {
+    text-align: center;
+  }
 
   p {
-   text-align: center;
+    color: $snow;
+    position: relative;
+    text-align: center;
   }
 
   @include bp-desktop {
-    
+    float: left;
+    position: relative;
   }
+
+
 }
