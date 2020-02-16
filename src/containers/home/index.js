@@ -10,12 +10,18 @@ import Footer from '../../components/footer';
 
 const Home = () => (
   <div class='homepg'>
-    <MePic />
-    <Headline />
-    <Profile />
-    <Skills />
-    <Resume />
-    <Footer /> 
+    <div class='hmtop'>
+      <MePic />
+      <Headline />
+    </div> 
+    <div class="hmbottom"> 
+      <Profile />
+      <Skills />
+    </div>
+    <div class = "footer">
+      <Resume />
+      <Footer /> 
+    </div>  
   </div>
 )
 
