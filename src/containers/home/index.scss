@@ -57,13 +57,15 @@
     }
 
     .profile {
+      max-width: 500px;
       float: left;
       position: relative;
     
     }
 
     .skills {
-      float: left;
+      max-width: 500px;
+      float: right;
       position: relative;
     }
 
