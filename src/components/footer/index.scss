@@ -34,11 +34,9 @@ footer {
 
   @include bp-desktop {
     footer {
-      display: flex;
-      flex-shrink: 0; 
       position: fixed;
       margin-top: auto;
-      
+
     }
 
   }
