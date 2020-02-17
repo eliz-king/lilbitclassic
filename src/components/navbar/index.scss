@@ -5,10 +5,10 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-family: $playfair;
   position: fixed;
   top: 0;
   left: 0;
+  font-family: $playfair;
   background-color: $charcoal;
 
   
@@ -23,7 +23,7 @@ nav {
   }
 
   a:visited {
-    color: $maroon5;
+    // color: $maroon5;
   }
   
   

@@ -18,7 +18,7 @@ const Home = () => (
       <Profile />
       <Skills />
     </div>
-    <div class = "footer">
+    <div class = "base">
       <Resume />
       <Footer /> 
     </div>  
