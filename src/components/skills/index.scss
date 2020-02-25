@@ -53,8 +53,9 @@
   }
 
   @include bp-desktop {
-    float: right;
-    position: relative;
+    .skills {
+      max-width: auto;
+    }
 
     .icons2 {
       i {

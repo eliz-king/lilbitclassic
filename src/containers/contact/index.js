@@ -2,7 +2,7 @@ import React from 'react';
 import './index.scss';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Nodemailer from 'nodemailer';
+
 
 const ContactMe = () => (
   <div>

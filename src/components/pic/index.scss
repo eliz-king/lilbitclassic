@@ -1,17 +1,22 @@
 @import '../../assets/sass/helpers';
 
 .pic {
-  height: 240px;
-  float: center;
+    width: auto;
+    height: 280px;
+    padding-top: 100px;
+    padding-left: 10px;
 
   img {
     height: 100%;
-    padding: 10px;
     border-radius: 100%;
   }
 
+
   @include bp-desktop {
-    
+    .pic {
+      height: 320px;
+      padding-top: 0;
+    }
   }
 }
 

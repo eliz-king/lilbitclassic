@@ -32,13 +32,14 @@ footer {
     }
   }
 
-  @include bp-desktop {
-    footer {
-      position: fixed;
-      margin-top: auto;
-
-    }
-
+  @include bp-desktop { 
+    .footer {
+      position: absolute;
+      height: 50px;
+      width: 100%; 
+      flex-direction: column;
+      flex-shrink: 0;
+    }  
   }
 }
 

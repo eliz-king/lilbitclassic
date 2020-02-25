@@ -2,9 +2,7 @@
 
 
 .headline {
-  padding: 20px;
-  position: relative;
-  top: 50px;
+  margin: 0 auto;
 
   h1 {
     border: 20px;
@@ -13,7 +11,6 @@
   }
 
   @include bp-desktop {
-    display: inline;
+    padding-top: 80px;
   }
-
 }
