@@ -13,12 +13,12 @@
   p {
     color: $snow;
     position: relative;
-    text-align: center;
   }
 
   @include bp-desktop {
-    float: left;
-    position: relative;
+    .profile {
+      max-width: auto;
+    }
   }
 
 
