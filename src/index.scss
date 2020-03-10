@@ -1,10 +1,49 @@
 @import './assets/sass/helpers';
 
-body {
-  background-color: $charcoal;
-  padding: 0;
-  margin: 0;
-  max-height: 100vh;
-  width: 100%;
+:root {
+  font-size: 62.5%;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $charcoal;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 { font-size: 4.8rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3.2rem; }
+h4 { font-size: 2.4rem; }
+h5 { font-size: 1.6rem; }
+h6 { font-size: 0.8rem; }
+
+// *:not(path) {
+//   &:not(g) {
+//     color:                      hsla(210, 100%, 100%, 0.9) !important;
+//     background-color:           hsla(210, 100%,  50%, 0.5) !important;
+//     outline:      solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+//     box-shadow:   none !important;
+//   }
+// }
