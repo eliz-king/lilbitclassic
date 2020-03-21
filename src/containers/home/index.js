@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 import Resume from '../../components/Resume';
-import MePic from '../../components/pic';
+import ProfilePic from '../../components/ProfilePic';
 import Headline from '../../components/headline';
 import Profile from '../../components/profile';
 import Skills from '../../components/skills';
@@ -9,20 +9,20 @@ import Footer from '../../components/footer';
 
 
 const Home = () => (
-  <div class='homepg'>
-    <div class='hmtop'>
-      <MePic />
+  <main class='homepg'>
+    <header class='hmtop'>
+      <ProfilePic />
       <Headline />
-    </div> 
-    <div class="hmbottom"> 
+    </header>
+    <div class="hmbottom">
       <Profile />
       <Skills />
     </div>
-    <div class = "base">
+    <footer class="base">
       <Resume />
-      <Footer /> 
-    </div>  
-  </div>
+      <Footer />
+    </footer>
+  </main>
 )
 
 export default Home;

@@ -1,18 +1,24 @@
 @import '../../assets/sass/helpers';
 
-
 .headline {
   margin: 0 auto;
   text-align: center;
 
+  @include bp-tablet-landscape {
+    max-width: calc(100vw - 25%);
+    margin: 0 auto;
+  }
+
   h1 {
     border: 20px;
-    display: inline;
     color: $royal-purp;
   }
 
+  > p {
+    font-size: 2rem;
+  }
+
   @include bp-desktop {
-    padding-top: 80px;
     text-align: center;
   }
 }
